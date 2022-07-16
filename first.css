@@ -1,66 +1,79 @@
-.anchor{
+a{
+  font-size: larger;
+  color: brown;
+}
+h2 {
+    text-decoration: underline;
+    color: #25aee9;
+  }
+  h4{
+    color: cadetblue;
     font-size: larger;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-}
-button{
-    width: 200px;
-    height: 100px;
+  }
+  .button {
+    border: 0;
+    border-radius: 5px;
+    padding: 12px 52px;
     color: white;
-    background-color: rgb(231, 83, 33);
-    border: 2px solid black;
-    border-radius: 40px;
-}
-button:hover{
-    background-color: brown;
-
-}
-p{
-    font-family: 'Edu VIC WA NT Beginner', cursive ;
-}
-
-.first{
-    width: 200px;
-    height: 200px;
+    background: #00a5ec;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    text-shadow: 2 2 5px grey;
+    box-shadow: 1 1 5px grey;
+    background-color: aqua;  
+  }
+  
+  .para {
+    font-family: "Edu VIC WA NT Beginner", cursive;
+  }
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    color: bisque;
+    text-align: center;
     background-color: gray;
-    border: 2px solid black;
-    border-radius: 80%;
-}
-.sec{
+    transition: width 2s linear;
+  }
+  
+  .box:hover {
+    width: 200px;
+  }
+  
+  .circle {
+    width: 12rem;
+    height: 12rem;
     background-color: coral;
-    width: 150px;
-    height: 200px;
-
-}
-
-.third{
-    width: 500px;
-    height: 500px;
-    background-color: green;
-    animation-name: hello;
-    animation-duration: 8s;
-    animation-delay: 4s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes hello{
-    0%{
-        background-color: goldenrod;
+    border: 2px solid black;
+    border-radius: 100%;
+  }
+  
+   .animation{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 20%;
+    animation: color-change 5s infinite;
+  }
+  
+  @keyframes color-change {
+    0% {
+      background-color: gold;
+      border: 5px groove black;
     }
-    25%{
-        background-color: plum;
+    25% {
+      background-color: green;
+      border: 5px solid orange;
     }
-    50%{
-        background-color: purple;
+    50% {
+      background-color: wheat;
+      border: 5px none  palevioletred;
     }
-    75%{
-        background-color: greenyellow;
+    100% {
+      background-color: plum;
+      border: 5px double whitesmoke;
     }
-}
-@media(min-width:700px) and (max-width:1000px){
-.two{
-    background-color: wheat;
-    width: 300px;
-    height: 350px;
-}
-}
+  }
+  
+  
